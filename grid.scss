@@ -1,0 +1,23 @@
+@use "sass:math";
+
+$cols: 12;
+$breakpoint: 768px;
+
+.row:after {
+    display: table;
+    content: " ";
+    clear: both;
+    box-sizing: border-box;
+}
+
+@for $i from 1 through $cols {
+    .col#{$i}{
+        box-sizing: border-box;
+        float: left;
+        width: math.div(100%, ($cols - $i + 1));
+
+        @media (max-width: $breakpoint) {
+            width: 100%;
+        }
+    }
+}

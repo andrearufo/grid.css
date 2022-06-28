@@ -1,0 +1,8 @@
+{
+  "name": "grid.css",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://andrearufo@github.com/andrearufo/grid.css.git",
+  "author": "Andrea Rufo <a.rufo@axio.studio>",
+  "license": "MIT",
+}
